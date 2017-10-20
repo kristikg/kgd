@@ -75,12 +75,6 @@ a:active {
 }
 
 /*--- HOMEPAGE ---------------------------------------------------*/
-.front-portfolio {
-    float: left;
-    width: 48%;
-    margin-right: 4%;
-    text-align: center;
-}
 .front-portfolio .portfolio-thumbnail img {
 	width: 75%;
 	height: auto;

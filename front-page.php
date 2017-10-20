@@ -26,23 +26,22 @@ get_header(); ?>
 	<?php dara_featured_pages(); ?> 
 
 
-<!-- PORTFOLIO PIECES -->
+<!-- PORTFOLIO PIECES this is the old code for Jetpack CPT -->
 	<?php
 		$portfolio = new WP_Query( array(
-			'post_type'      => 'jetpack-portfolio',
+			'post_type'      => 'my_portfolio',
 			'order'          => 'DESC',
-			'orderby'        => 'rand',
 			'posts_per_page' => 2,
 			'no_found_rows'  => true,
 		) );
 	?>
 
 	<?php if ( $portfolio->have_posts() ) : ?>
-	<div class="front-portfolio front-testimonials testimonials">
-		<div class="grid-row">
+	<div class="front-portfolio">
+		<div class="front-portfolio-piece">
 		<?php
 			while ( $portfolio->have_posts() ) : $portfolio->the_post();
-				 get_template_part( 'components/portfolio/content', 'portfolio' );
+				 get_template_part( 'components/portfolio/content', 'myportfolio' );
 			endwhile;
 			wp_reset_postdata();
 		?>
