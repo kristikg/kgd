@@ -25,12 +25,15 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'components/header/site', 'branding' ); ?>
+		<div class="site-branding">
+			<?php dara_the_custom_logo(); ?>
+		</div>
 
-		<?php get_template_part( 'components/header/custom', 'header' ); ?>
+<!--DO NOT DISPLAY CUSTOM HEADER on temporary one-page site
+		?php get_template_part( 'components/header/custom', 'header' ); ?>-->
 		
-<!--DO NOT DISPLAY NAV on temporary one-page site	
-		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?> -->
+<!--DO NOT DISPLAY NAV on temporary one-page site
+		?php get_template_part( 'components/navigation/navigation', 'top' ); ?> -->
 
 	</header>
 

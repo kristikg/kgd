@@ -12,6 +12,7 @@ else :
 get_header(); ?>
 
 	<div id="primary" class="content-area front-page-content-area">
+		<p> Website Coming Soon!</p>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'components/page/content', 'frontpage' ); ?>
 

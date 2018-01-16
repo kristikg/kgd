@@ -58,7 +58,30 @@ a:active {
 	color: #f6f393;
 	cursor: pointer; cursor: hand;
 }
+/*--- GENERAL --------------------------------------------------*/
+.site {
+	max-width: 1920px;
+}
+.content-wrapper.full-width.without-featured-image {
+    margin: 0 8%;
+    padding: 64px 8%;
+}
+.front-page-content-area.content-area {
+    padding: 3.2em 10%;
+}
 
+/*--- HEADER ---------------------------------------------------*/
+.site-branding {
+	width: 100%;
+	background-image: url('http://localhost/kgdesign/wp-content/uploads/2017/11/business-woman-working-on-laptop.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+}
+.custom-header img {
+	width: 100%;
+	height: auto;
+}
 /*--- FOOTER ---------------------------------------------------*/
 .site-footer {
 	background-color: #fff;
